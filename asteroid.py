@@ -21,6 +21,9 @@ class Asteroid(CircleShape):
             return
         log_event("asteroid_split")
         split_angle = random.uniform(20,50)
+        new_velocity1 = self.velocity.rotate(split_angle)
+        new_velocity2 = self.velocity.rotate(-split_angle)
+
         
 
         
